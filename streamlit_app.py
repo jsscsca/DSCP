@@ -1,9 +1,10 @@
-import streamlit as st
+cd DSCP
 
-st.title('My First Streamlit App')
-st.write('Hello from Streamlit!')
+# Create the Python file with valid content
+echo "import streamlit as st\nst.title('My First Streamlit App')\nst.write('Hello from Streamlit!')" > streamlit_app.py
 
-echo "import streamlit as st\nst.title('My First Streamlit App')" > streamlit_app.py
+# Push it to GitHub
 git add streamlit_app.py
-git commit -m "Add streamlit_app.py"
+git commit -m "Add working Streamlit app"
 git push origin main
+
